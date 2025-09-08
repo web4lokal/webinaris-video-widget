@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flyout-Widget – zentriert (Fix)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main style="min-height:120vh;"></main>
+
+  <aside class="flyout" id="flyout" aria-live="polite">
+    <button class="flyout__close" id="flyoutClose" aria-label="Fenster einklappen" title="Einklappen">×</button>
+
+    <div class="flyout__header">
+      <div class="flyout__header-inner">
+        <svg viewBox="0 0 64 64" class="badge__icon" role="img" aria-label="Play">
+          <circle cx="32" cy="32" r="32" class="badge__circle"></circle>
+          <polygon points="26,20 26,44 46,32" class="badge__triangle"></polygon>
+        </svg>
+        <h3 class="flyout__title" id="flyoutTitle">Videotipp!</h3>
+      </div>
+    </div>
+
+    <div class="flyout__body">
+      <p class="flyout__text" id="flyoutText">
+        So finden Sie immer die<br/>richtigen Webinar-Termine
+      </p>
+    </div>
+  </aside>
+
+  <!-- Eingeklappte Variante: nur das blaue Play-Icon -->
+  <button class="flyout-toggle" id="flyoutToggle" aria-label="Fenster öffnen" title="Öffnen">
+    <svg viewBox="0 0 64 64" class="toggle__icon" role="img" aria-label="Play">
+      <circle cx="32" cy="32" r="32" class="badge__circle"></circle>
+      <polygon points="26,20 26,44 46,32" class="badge__triangle"></polygon>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
